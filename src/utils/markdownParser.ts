@@ -108,7 +108,8 @@ export class MarkdownParser {
           throw new Error(`Round ${roundNumber} not found`)
       }
 
-      const response = await fetch(`/assessments/${filename}`)
+      const basePath = import.meta.env.BASE_URL || '/'
+      const response = await fetch(`${basePath}assessments/${filename}`)
 
       if (!response.ok) {
         throw new Error(`Failed to load assessment: ${response.statusText}`)
