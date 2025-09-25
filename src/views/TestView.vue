@@ -151,7 +151,7 @@ const selectedOption = ref<string | null>(null)
 const showFeedback = ref(false)
 const isCorrect = ref(false)
 const showTimeUpModal = ref(false)
-let timerInterval: NodeJS.Timeout | null = null
+let timerInterval: number | null = null
 
 const currentAssessment = computed(() => assessmentStore.currentAssessment)
 const currentSession = computed(() => assessmentStore.currentSession)
