@@ -1,0 +1,4 @@
+@import './base.css';
+
+/* Removido todo o CSS problemático que quebrava o layout */
+/* O App.vue agora controla completamente o layout */
