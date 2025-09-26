@@ -7,7 +7,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Build outputs
-dist-ssr/
+dist-ssr/vej
 build/
 .output/
 
@@ -98,3 +98,5 @@ temp/
 
 # Local Vercel folder
 .vercel
+
+GITHUB_PAGES_DEPLOYMENT_GUIDE.md

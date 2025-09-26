@@ -30,7 +30,9 @@ D) Both B and C are correct
 
 **Question 3** When using `<script setup>` with TypeScript, what is the correct way to define props with default values?
 
-A) `const props = defineProps<{ name?: string }>({ name: 'default' })` B) `const props = withDefaults(defineProps<{ name?: string }>(), { name: 'default' })` 
+A) `const props = defineProps<{ name?: string }>({ name: 'default' })` 
+
+B) `const props = withDefaults(defineProps<{ name?: string }>(), { name: 'default' })` 
 
 C) `const props = defineProps({ name: { type: String, default: 'default' } })` 
 
@@ -306,7 +308,9 @@ D) Validation doesn't require special TypeScript handling
 
 A) `watch(source, (newVal, oldVal, onInvalidate) => { onInvalidate(() => {}) })` 
 
-B) `watch<T>(source, (newVal: T, oldVal: T, cleanup: Function) => {})` C) The cleanup function is automatically typed 
+B) `watch<T>(source, (newVal: T, oldVal: T, cleanup: Function) => {})` 
+
+C) The cleanup function is automatically typed 
 
 D) Both A and C are correct
 
@@ -342,7 +346,9 @@ A) `async function useAsyncComposable(): Promise<ComposableReturn>`
 
 B) `function useAsyncComposable(): { data: Ref<T | null>, loading: Ref<boolean> }` 
 
-C) Always return promises from composables D) Both A and B are valid patterns
+C) Always return promises from composables 
+
+D) Both A and B are valid patterns
 
 ---
 
