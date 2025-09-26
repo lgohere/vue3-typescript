@@ -335,9 +335,11 @@ watch(searchQuery, async (newQuery) \=\> {
   }  
 }, { immediate: true })
 
-A) Race condition \- newer requests may arrive before older ones 
+A) Race condition \- newer requests may arrive before older ones
 
-B) Missing error handling C) No debouncing for API calls 
+B) Missing error handling
+
+C) No debouncing for API calls 
 
 D) All of the above are serious issues
 

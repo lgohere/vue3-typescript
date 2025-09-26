@@ -126,9 +126,9 @@ const display \= computed(() \=\> {
   // What's the proper typing approach?  
 })
 
-A) `computed<string>(() => \`${name.value} (${age.value})\`)
+A) `computed<string>(() => \`${name.value} (${age.value})\`)`
 
-`B)`computed(() \=\> \`${name.value} (${age.value})\`) as ComputedRef\<string\>\` 
+B) `computed(() \=\> \`${name.value} (${age.value})\`) as ComputedRef\<string\>` 
 
 C) TypeScript automatically infers the return type 
 

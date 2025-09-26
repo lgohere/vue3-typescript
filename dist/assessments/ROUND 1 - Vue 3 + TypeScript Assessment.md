@@ -30,7 +30,9 @@ D) Both B and C are correct
 
 **Question 3** When using `<script setup>` with TypeScript, what is the correct way to define props with default values?
 
-A) `const props = defineProps<{ name?: string }>({ name: 'default' })` B) `const props = withDefaults(defineProps<{ name?: string }>(), { name: 'default' })` 
+A) `const props = defineProps<{ name?: string }>({ name: 'default' })`
+
+B) `const props = withDefaults(defineProps<{ name?: string }>(), { name: 'default' })` 
 
 C) `const props = defineProps({ name: { type: String, default: 'default' } })` 
 
@@ -40,7 +42,13 @@ D) Both B and C are correct
 
 **Question 4** What happens when you try to destructure a reactive object in Vue 3?
 
-A) It works perfectly and maintains reactivity B) It loses reactivity for the destructured properties C) It throws a TypeScript error D) It only works with computed properties
+A) It works perfectly and maintains reactivity
+
+B) It loses reactivity for the destructured properties
+
+C) It throws a TypeScript error
+
+D) It only works with computed properties
 
 ---
 
@@ -298,9 +306,11 @@ D) Validation doesn't require special TypeScript handling
 
 **Question 26** How do you properly type a watcher that might return a cleanup function?
 
-A) `watch(source, (newVal, oldVal, onInvalidate) => { onInvalidate(() => {}) })` 
+A) `watch(source, (newVal, oldVal, onInvalidate) => { onInvalidate(() => {}) })`
 
-B) `watch<T>(source, (newVal: T, oldVal: T, cleanup: Function) => {})` C) The cleanup function is automatically typed 
+B) `watch<T>(source, (newVal: T, oldVal: T, cleanup: Function) => {})`
+
+C) The cleanup function is automatically typed 
 
 D) Both A and C are correct
 
@@ -332,11 +342,13 @@ D) Only props need explicit typing, slots are inferred
 
 **Question 29** How do you properly handle async composables in Vue 3 with TypeScript?
 
-A) `async function useAsyncComposable(): Promise<ComposableReturn>` 
+A) `async function useAsyncComposable(): Promise<ComposableReturn>`
 
-B) `function useAsyncComposable(): { data: Ref<T | null>, loading: Ref<boolean> }` 
+B) `function useAsyncComposable(): { data: Ref<T | null>, loading: Ref<boolean> }`
 
-C) Always return promises from composables D) Both A and B are valid patterns
+C) Always return promises from composables
+
+D) Both A and B are valid patterns
 
 ---
 
